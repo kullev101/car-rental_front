@@ -1,0 +1,56 @@
+.caring-offers {
+    min-height: 100vh;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.basement {
+    width: 100%;
+    height: 200px;
+    background-color: #231000;
+    margin-top: 30px;
+    display: flex;
+}
+.basement-container {
+    max-width: 1400px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+.basement-block {
+    width: 33.3%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.main-basement {
+    text-align: center;
+    font-family: "Zen Dots", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    color: aliceblue;
+}
+.less-basement {
+    text-align: center;
+    font-family: "Lexend Exa", serif;
+    font-optical-sizing: auto;
+    font-weight: 150;
+    font-style: normal;
+    font-size: 16px;
+    margin: 0 auto;
+    color: aliceblue;
+    justify-content: center;
+}
+
+@media screen and (max-width: 955px){
+    .less-basement{
+        font-size: 12px;
+    }
+}
+

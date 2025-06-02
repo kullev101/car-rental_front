@@ -1,0 +1,246 @@
+ <!DOCTYPE HTML>
+<html>
+ <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="Caringcard-main.css">
+  <link rel="stylesheet" href="Caring-style-nav.css">
+  <link rel="stylesheet" href="Caringcard-card-staitment.css">
+  <link rel="stylesheet" href="Caringcard-card.css">
+  <link rel="stylesheet" href="Caringcard-properties.css">
+  <link rel="stylesheet" href="swiper.css">
+  <link rel="stylesheet" href="Caring-style-contact.css">
+  <link rel="stylesheet" href="Caringcard-style-rate.css">
+  <link rel="stylesheet" href="Caring-style-basement.css">
+  <link rel="stylesheet" href="Caring-style-modal.css">
+  <link rel="stylesheet" href="popup.css">
+  <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+  <title>Caring</title>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+ </head>
+ <body>
+    <div class="caring-card-main">
+        <header>
+            <div class="wrap-logo">
+            <img class="icon-navigator" src="w1.png">
+            <a class="logo-text-navigator" class="logo">Caring</a>
+            </div>
+            <nav class=".nav">
+              <a class="nav-button" hrefclass="active" href="../../Caring.html">Home</a>
+              <a class="nav-button" href="#about">About us</a>
+              <a class="nav-button" href="../carin-offers.html">Offers</a>
+              <button class="navbar-button"><img class="menu-icon" src="menu.png"></button>
+              <div class="sidebar">
+                <div type="button" class="close-button"><img class="menu-icon" src="close.png"></div>
+                <a hrefclass="active" href="../../Caring.html" class="sidebar-button">Home</a>
+                <a href="#about" class="sidebar-button">About us</a>
+                <a href="../carin-offers.html" class="sidebar-button">Offers</a>
+              </div>
+            </nav>
+          </header>
+          <div class="main-card-staitment">
+            <div class="car-card-name">Volkswagen 4.0</div>
+            <div class="rated-block">
+                <div class="rated-text">rate:4.9</div>
+                <div class="rated-stars">
+                    <img class="stared" src="sparklefill.png">
+                    <img class="stared" src="sparklefill.png">
+                    <img class="stared" src="sparklefill.png">
+                    <img class="stared" src="sparklefill.png">
+                    <img class="stared" src="sparkle.png">
+                </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="swiper-card-block">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="car3.png"></div>
+                      <div class="swiper-slide"><img src="car4.png"></div>
+                      <div class="swiper-slide"><img src="car5.png"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+            </div>
+            <div class="text-card-block">
+                <div class="info-container">
+                    <div class="baseinfo-card">
+                        <div class="baseinfo-card-main">Base Info:</div>
+                        <div class="info-statement">
+                            <div class="circle"></div>
+                            <div class="info-statement-text">positions: </div><div class="info-statement-text bold">Hrodno, Gomel, Minsk</div>
+                        </div>
+                        <div class="info-statement">
+                            <div class="circle"></div>
+                            <div class="info-statement-text">speed: </div><div class="info-statement-text bold">80-90 km/h</div>
+                        </div>
+                        <div class="info-statement">
+                            <div class="circle"></div>
+                            <div class="info-statement-text">year: </div><div class="info-statement-text bold">2019</div>
+                        </div>
+                        <div class="info-statement">
+                            <div class="circle"></div>
+                            <div class="info-statement-text">mileage: </div><div class="info-statement-text bold">3k km</div>
+                        </div>
+                        <div class="info-statement">
+                            <div class="circle"></div>
+                            <div class="info-statement-text bold">Parking camera</div>
+                        </div>
+                        <div class="info-statement">
+                            <div class="circle"></div>
+                            <div class="info-statement-text bold">7" HD digital Display</div>
+                        </div>
+                    </div>
+                    <div class="baseinfo-card">
+                        <div class="baseinfo-card-main pading">Cost:</div>
+                        <div class="cost-block">3hr - 19.00 BYN</div>
+                        <div class="cost-block">6hr - 29.00 BYN</div>
+                        <div class="cost-block">9hr - 39.00 BYN</div>
+                        <div class="discount">Experience more than<br> 5 years: 10% Discount </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <a href="#" class="boton">Order</a>
+                </div>
+                <div id="popupOverlay" class="popup-overlay">
+                    <div class="popup-content">
+                        <span id="closePopup" class="close-popup">&times;</span>
+                        <div class="popup-main">Sign your Order</div>
+                        <form>
+                            <label for="first-name" class="first-name">Firstname:</label>
+                            <input type="text" class="first-name-input" id="first-name" name="datemax">
+                        </form>
+                        <form>
+                            <label for="first-name" class="first-name">Lastname:</label>
+                            <input type="text" class="first-name-input" id="first-name" name="datemax">
+                        </form>
+                        <form>
+                            <label for="first-name" class="first-name">YourEmail:</label>
+                            <input type="text" class="first-name-input" id="first-name" name="datemax">
+                        </form>
+                        <form>
+                            <label for="first-name" class="first-name">PhoneName:</label>
+                            <input type="text" class="first-name-input" id="first-name" name="datemax">
+                        </form>
+                        <div class="popup-credit-text">Your bank card information</div>
+                        <div class="credit-container">
+                            <input class="card-name card-input" placeholder="Credit card number:">
+                            <input class="card-year card-input" placeholder="Year:">
+                            <input class="card-mounth card-input" placeholder="Mounth:">
+                            <input class="card-cvv card-input" placeholder="CVV:">
+                        </div>
+                        <div class="card-button-container">
+                            <div class="card-button">Order</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div> 
+          <div class="caringcard-properties">
+            <div class="main-properties">
+                <div class="properties-line">
+                    <div class="properties-line-text">Mark: </div><div class="properties-line-text-bold">Volkswagen</div>
+                </div>
+                <div class="properties-line">
+                    <div class="properties-line-text">Model: </div><div class="properties-line-text-bold">0.4</div>
+                </div>
+                <div class="properties-line">
+                    <div class="properties-line-text">Dimensions: </div><div class="properties-line-text-bold"> 4584 x 1852 x 1631</div>
+                </div>
+                <div class="properties-line">
+                    <div class="properties-line-text">Brand Country of Origin: </div><div class="properties-line-text-bold"> German</div>
+                </div>
+                <div class="properties-line">
+                    <div class="properties-line-text">Engine type: </div><div class="properties-line-text-bold"> Gasoline</div>
+                </div>
+            </div>
+            <div class="history-properties-main">
+                <div class="history-properties">History check</div>
+                <div class="history-properties-less">Report dated February 8, 2020</div>
+                <div class="history-staitment-block">
+                    <img class="history-icon" src="clipboard_6012271.png">
+                    <div class="properties-line-text-bold">Mileage history:</div>
+                    <div class="pad properties-line-text">6 entries since 2020 </div>
+                </div>
+                <div class="history-staitment-block">
+                    <img class="history-icon" src="bag_6012345.png">
+                    <div class="properties-line-text-bold">Checking legalyty: </div>
+                    <div class="pad properties-line-text">bail, search and restrictions</div>
+                </div>
+                <div class="history-staitment-block">
+                    <img class="history-icon" src="security_6011869.png">
+                    <div class="properties-line-text-bold">Security: </div>
+                    <div class="pad properties-line-text">under secure</div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-main-container">
+            <div class="contact-container">
+                <div class="contact-main-block"><div class="contact-text">Contact us</div></div>
+                <div class="contact-text-block">
+                    <div class="contact-block">
+                        <div class="socialnetworks-block">
+                          <img src="whatsapp-256.png" class="social">
+                          <img src="instagram-6-256.png" class="social">
+                          <img src="telegram-256.png" class="social">
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="mail-container">
+                            <div class="mail-block">Caring@gmai.som</div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="mail-container">
+                            <div class="call-block">+375 (29) 111 111</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <div class="rate-main-container">
+          <div class="rate-text">Give your rate</div>
+          <div class="rated-stars">
+              <img class="stared" src="sparklefill.png">
+              <img class="stared" src="sparklefill.png">
+              <img class="stared" src="sparklefill.png">
+              <img class="stared" src="sparklefill.png">
+              <img class="stared" src="sparkle.png">
+          </div>
+      </div>
+  </div>
+      </div>
+    <div class="basement">
+        <div class="basement-container">
+         <div class="basement-block"><div class="main-basement">Caring</div></div>
+         <div class="basement-block"><div class="less-basement">Privacy Policy</div></div>
+         <div class="basement-block"><div class="less-basement">
+            Consent to the processing
+            <br>of personal data
+         </div>
+          </div>
+        </div>
+      </div>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          mousewheel: true,
+          keyboard: true,
+        });
+
+        
+      </script>
+      <script src="caring.js"></script>
+ </body>

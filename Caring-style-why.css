@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.why-container {
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    animation-duration: 2s;
+    animation-name: shadowcard;
+}
+.why-block {
+    width: 34%;
+    height: auto;
+    text-align: center;
+}
+.why-icon {
+    width: 59px;
+    height: 59px;
+    background-image: url(parking.png);
+    background-size: cover;
+    margin: 0 auto;
+}
+.why-main-text {
+    font-family: "Zen Dots", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #472100;
+    padding-top: 20px;
+}
+.why-less-text {
+    font-family: "Lexend Exa", serif;
+    font-optical-sizing: auto;
+    font-weight: 175;
+    font-style: normal;
+    font-size: 15px;
+    color: #000000;
+    padding-top: 20px;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+}
+.why-icon2 {
+    background-image: url(wallet.png);
+}
+.why-icon3 {
+    background-image: url(car.png);
+}
+@media screen and (max-width: 955px) {
+    .why-container {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .why-block {
+        margin-top: 20px;
+        width: 70%;
+    }
+    .why-less-text{
+        font-weight: 250;
+    }
+
+}

@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.brand-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    animation-duration: 2s;
+    animation-name: shadowcard;
+}
+.brand-block {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.brand-icon {
+    width: 100px;
+    height: 86px;
+    margin: 0 auto;
+}
+.volk {
+    height: 100px;
+}
+.aud {
+    width: 175px;
+    height: 109px;
+}
+.mit {
+    padding-top: 14px;
+}
+.op {
+    padding-top: 14px;
+}
+.container-brands {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 -5px;
+  }
+  .container2-brands {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 5px;
+  }
+  @media (min-width: 100px) and (max-width: 1441px) {
+    .container-brands{
+        flex-direction: column;
+    }
+    .container2-brands{
+        flex-direction: column;
+    }
+
+  }

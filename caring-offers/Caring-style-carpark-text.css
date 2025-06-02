@@ -1,0 +1,22 @@
+.carpark-text-container {
+    width: 100%;
+    max-width: 1400px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+.carpark-text {
+    margin: 0 auto;
+    font-family: "Zen Dots", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+}
+@media (max-width: 920px) {
+    .carpark-text {
+        font-size: 30px;
+    }
+    .carpark-text-container {
+        height: 80px;
+    }
+}

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Slab:wght@100..900&family=Zen+Dots&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+.Screen {
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 650px;
+    background-image: url(beautiful-aerial-shot-narrow-roads-intersection-countryside-with-white-tower-photoaidcom-darken.jpg);
+    border-radius: 50px;
+    background-size: cover;
+    animation-duration: 2s;
+    animation-name: shadowcard;
+    display: flex;
+    align-items: center;
+}
+.screen-text-container {
+    max-width: 750px;
+    margin: 0 auto;
+    width: 100%;
+    height: 237px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.screen-maintext {
+    max-width: 750px;
+    width: 100%;
+    font-family: "Zen Dots", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+
+}
+.screen-lesstext {
+    padding-top: 31px;
+    font-size: 12px;
+    font-family: "Lexend Exa", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+.line {
+    max-width: 750px;
+    margin: 0 auto;
+    width: 80%;
+    border-bottom: 1px solid;
+    padding-bottom: 31px;
+}
+@media (min-width: 320px) and (max-width: 920px) {
+.Screen {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 500px;
+}
+.screen-maintext {
+    font-size: 44px;
+}
+.screen-lesstext {
+    font-size: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+}
+@keyframes shadowcard {
+    from {
+        opacity: 0%;
+    }
+  
+    to {
+        opacity: 100%;
+    }
+  }

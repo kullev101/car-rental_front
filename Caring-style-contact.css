@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.contact-container{
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 280px;
+    background-image: url(high-angle-shot-curvy-road-surrounded-by-lot-beautiful-trees-esposende-photoaidcom-darken.jpg);
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    animation-duration: 2s;
+    animation-name: shadowcard;
+}
+.contact-main-textcont {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    font-family: "Zen Dots", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    color: aliceblue;
+    padding-top: 111px;
+}
+.contact-main-cont {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contact-vertcont {
+    width: 96%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+.contact-whidthcont {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contact-block {
+width: 100%;
+height: 50%;
+color: aliceblue;
+text-align: center;
+}
+.first {
+    padding-top: 25px;
+    font-family: "Lexend Exa", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+}
+.second {
+    padding-top: 17px;
+    font-family: "Lexend Exa", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 14px;
+}
+.third {
+    padding-top: 25px;
+    font-family: "Lexend Exa", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 14px;
+}
+.contact-icon-container {
+    display: flex;
+    flex-direction: row;
+}
+.contact-icon-block {
+    width: 33.3%;
+    height: 100%;
+    text-align: center;
+}
+.contact-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+@media screen and (max-width: 955px) {
+    .contact-container {
+        flex-direction: column;
+   margin-left: 10px;
+   margin-right: 10px;
+        height: auto;
+
+    }
+    .contact-main-textcont {
+        width: 100%;
+        height: 40%;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        font-size: 40px;
+    }
+    .contact-main-cont {
+        width: 100%;
+        height: 60%;
+        padding-bottom: 20px;
+    }
+    .contact-vertcont {
+        height: 25%;
+    }
+    .first{
+      font-size: 10px;
+    }
+    .second{
+        padding-top: 25px;
+      font-size: 10px;
+    }
+    .third{
+        font-size: 10px;
+    }
+    .contact-icon{
+        padding-left: 30px;
+    }
+    .contact-block {
+        padding: 7px;
+    }
+}

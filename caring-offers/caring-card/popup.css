@@ -1,0 +1,185 @@
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    
+}
+
+.popup-content {
+    max-width: 500px;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeIn 0.6s ease-in-out;
+    position: relative;
+    z-index: 10000;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.boton {
+    font-family: "Zen Dots", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block; /* Делаем ссылку блочным элементом */
+    padding: 10px 20px; /* Внутренние отступы */
+    font-size: 16px; /* Размер текста */
+    color: white; /* Цвет текста */
+    background-color: #472100; /* Цвет фона */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Закругляем углы */
+    text-align: center; /* Выравниваем текст по центру */
+    text-decoration: none; /* Убираем подчеркивание */
+    cursor: pointer; /* Меняем курсор на указатель */
+    transition: background-color 0.8s ease; /* Плавное изменение цвета фона */
+    max-width: 200px;
+    width: 100%;
+}
+
+/* Стили при наведении на кнопку */
+.boton:hover {
+    background-color: #a66c36; /* Темнее цвет фона */
+}
+
+
+
+/* Стили для фокуса (для доступности) */
+.popup-main {
+    width: 100%;
+    text-align: center;
+    font-family: "Zen Dots", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+form {
+    margin-top: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.first-name {
+    font-family: "Lexend Exa", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-size: 16px;
+    color: #7B7B7B;
+}
+.first-name-input {
+    border: 0;
+    border-bottom: 0.6px #7B7B7B solid;
+    width: 100%;
+    margin-left: 10px;
+    font-family: "Lexend Exa", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 16px;
+}
+.first-name-input:focus {
+    outline: 0;
+    outline-offset: 0;
+    border: none;
+    border-bottom: 0.6px #7B7B7B solid;
+}
+.popup-credit-text {
+    width: 100%;
+    text-align: center;
+    font-family: "Zen Dots", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.credit-container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+    margin-top: 30px;
+}
+.card-input {
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-family: "Lexend Exa", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+}
+.card-input::placeholder{
+    font-family: "Lexend Exa", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 13px;
+    text-align: center;
+}
+.card-name {
+ width: 40%;
+}
+.card-year {
+ width: 20%;
+}
+.card-mounth {
+ width: 20%;
+}
+.card-cvv {
+ width: 20%;
+}
+.card-button-container {
+    margin-top: 30px;
+    height: 117px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-button {
+    width: 200px;
+    height: 40px;
+    background-color: #472100;
+    font-family: "Zen Dots", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: aliceblue;
+    border-radius: 10px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Меняем курсор на указатель */
+    transition: background-color 0.8s ease; /* Плавное изменение цвета фона */
+}
+.card-button:hover {
+    background-color: #a66c36; /* Темнее цвет фона */
+}

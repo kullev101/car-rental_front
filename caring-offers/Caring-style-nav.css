@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Slab:wght@100..900&family=Zen+Dots&display=swap');
+body { 
+    margin: 0;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 70px;
+  }
+  
+  .wrap-logo {
+    display: flex;
+   align-items: center;
+  }
+  
+  header a {
+    color: #472100;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  header a.logo {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+  }
+  
+  header a:hover {
+    color: #472100;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  .nav-button {
+    position: relative;
+    font-size: 16px;
+    margin-left: 40px;
+    font-family: "Zen Dots", serif;
+    font-weight: 400;
+    font-style: normal;
+
+  }
+  .nav-button::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background: #472100;
+  }
+  .nav-button::after {
+    width: 0;
+    transition: 0.4s;
+  }
+  .nav-button:hover:after {
+    width: 100%;
+  }
+  .logo-text-navigator {
+    font-size: 28px;
+    font-family: "Zen Dots", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 15px;
+  }
+  .icon-navigator {
+    width: 40px;
+    height: 40px;
+  }
+.menu-icon {
+  width: 30px;
+  height: 30px;
+}
+.navbar-button {
+  border: 0;
+  background-color: #ffffff00;
+}
+.sidebar {
+  position: fixed;
+  right: -280px; /* Скрываем боковую панель за пределами экрана справа */
+  width: 200px;
+  height: 300px;
+  background-color: #ffffff;
+  color: white;
+  transition: right 0.4s ease; /* Плавный переход */
+  margin-top: 220px;
+  z-index: 3;
+  border-left: 2.5px black solid;
+  border-bottom: 2.5px black solid;
+  border-radius:  0px 10px ;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.active {
+  right: 0; /* Показываем боковую панель
+    margin-right: 10px;
+  */
+}
+.close-button {
+  padding-left: 10px;
+  padding-top: 30px;
+  background-color: #ffffff;
+  border: 0;
+}
+.sidebar-button {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-family: "Zen Dots", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  height: 50px;
+  width: 100%;
+  border-radius: 0;
+}
+.sidebar-button:hover {
+  background-color: #d0d0d0;
+}
+@media (min-width: 1px) and (max-width: 920px){
+  header{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 40px;
+  }
+  .menu-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .icon-navigator {
+    width: 20px;
+    height: 20px;
+  }
+  .logo-text-navigator {
+    font-size: 20px;
+    padding-left: 5px;
+  }
+}

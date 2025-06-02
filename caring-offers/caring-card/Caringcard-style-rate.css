@@ -1,0 +1,27 @@
+.rate-main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    animation-name: shadowcard;
+    animation-duration: 3.2s;
+}
+.rate-text {
+    width: 100%;
+    max-width: 414px;
+    font-family: "Zen Dots", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1.5px black solid;
+}
+@media (min-width: 1px) and (max-width: 920px) {
+    .rate-text {
+        max-width: 200px;
+        font-size: 20px;
+    }
+}

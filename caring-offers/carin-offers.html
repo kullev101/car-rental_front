@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="Caring-offers-main.css">
+    <link rel="stylesheet" href="Caring-style-nav.css">
+    <link rel="stylesheet" href="Caring-style-basement.css">
+    <link rel="stylesheet" href="Caring-style-search.css">
+    <link rel="stylesheet" href="Caring-style-offers.css">
+    <link rel="stylesheet" href="Caring-style-carpark-text.css">
+  </head>
+  <body>
+    <style>
+      .card {
+        opacity: 0;
+        transition: opacity 0.9s ease-in-out;
+      }
+      .card.visible {
+        opacity: 1;
+      }
+      .card.hidden {
+        opacity: 0;
+      }
+    </style>
+    <div class="caring-offers">
+      <header>
+        <div class="wrap-logo">
+        <img class="icon-navigator" src="w1.png">
+        <a class="logo-text-navigator" class="logo">Caring</a>
+        </div>
+        <nav class=".nav">
+          <a class="nav-button" hrefclass="active" href="../Caring.html">Home</a>
+          <a class="nav-button" href="#about">About us</a>
+          <a class="nav-button" href="carin-offers.html">Offers</a>
+          <button class="navbar-button"><img class="menu-icon" src="menu.png"></button>
+          <div class="sidebar">
+            <div type="button" class="close-button"><img class="menu-icon" src="close.png"></div>
+            <a hrefclass="active" href="../Caring.html" class="sidebar-button">Home</a>
+            <a href="#about" class="sidebar-button">About us</a>
+            <a href="carin-offers.html" class="sidebar-button">Offers</a>
+          </div>
+        </nav>
+      </header>
+      
+      <div class="container">
+        <div class="input-container">
+          <input type="text" placeholder="Your input">
+          <div class="search-icon"></div>
+        </div>
+        <div class="select-container">
+          <div class="custom-select" tabindex="0">
+            Choose your city
+          </div>
+          <div class="arrow"></div>
+          <div class="options-container">
+            <ul>
+              <li data-value="all" class="active">All</li>
+              <li data-value="category1">Hrodno</li>
+              <li data-value="category2">Minsk</li>
+              <li data-value="category3">Orsha</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="carpark-text-container">
+        <div class="carpark-text">Our Carpark</div>
+      </div>
+      <div id="cardsContainer" class="cards-container"></div>
+      <script src="caring.js"></script>
+    </div>
+    
+  </body>
+  <div class="basement">
+      <div class="basement-container">
+       <div class="basement-block"><div class="main-basement">Caring</div></div>
+       <div class="basement-block"><div class="less-basement">Privacy Policy</div></div>
+       <div class="basement-block"><div class="less-basement">
+          Consent to the processing
+          <br>of personal data
+       </div>
+        </div>
+      </div>
+    </div>
+</html>

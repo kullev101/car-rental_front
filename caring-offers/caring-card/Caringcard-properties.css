@@ -1,0 +1,105 @@
+.caringcard-properties {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin-top: 30px;
+
+}
+.main-properties {
+    animation-name: shadowcard;
+    animation-duration: 3.2s;
+    width: 50%;
+}
+.properties-line {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.properties-line-text {
+    font-family: "Lexend Exa", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 18px;
+}
+.properties-line-text-bold{
+    font-family: "Lexend Exa", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.history-properties-main {
+    animation-name: shadowcard;
+    animation-duration: 3.2s;
+    width: 50%;
+}
+.history-properties {
+    font-family: "Zen Dots", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    margin-top: 20px;
+}
+.history-properties-less {
+    font-family: "Lexend Exa", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-size: 14px;
+}
+.history-staitment-block {
+display: flex;
+flex-direction: row;
+align-items: center;
+margin-top: 20px;
+}
+.history-icon {
+    width: 30px;
+    height: 30px;
+}
+.pad {
+    margin-left: 10px;
+}
+@media (min-width: 1px) and (max-width: 920px) {
+    .caringcard-properties {
+        flex-direction: column;
+    }
+    .main-properties {
+        width: 100%;
+    }
+    .history-properties-main {
+        max-width: 410px;
+        width: 90%;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+    .properties-line-text-bold {
+        margin-left: 10px;
+        font-size: 14px;
+        white-space: nowrap;
+        padding-left: 0px;
+    }
+    .properties-line {
+        margin-left: 10px;
+    }
+    .history-icon {
+        width: 25px;
+        height: 25px;
+    }
+    .properties-line-text {
+        font-size: 14px;
+    }
+}
+@keyframes slide {
+    from {
+      padding-left: 20px;
+    }
+  
+    to {
+        padding-left: 0px;
+    }
+  }
